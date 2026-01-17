@@ -10,30 +10,42 @@ package PharamcyLogic;
  * @author سندس
  */
 public class User {
-   
 
- 
-    private String id;
+    private int id;
     private String name;
-    private String password;
+    private int password;
     private String role;
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
-
-    public String getRole() { return role; }
-    public void setRole(String role) { this.role = role; }
-
+    public int getId() {  //  هادا id 
+        return id;
+    }
+  //seter ,geter id 
     public void setId(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.id = id;
+    }
+
+    public String getName() {
+ 
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+// هان  passeword  
+    public int getPassword() {
+        return password;
+    }
+
+    public void setPassword(int password) {
+        this.password = password;
+    }
+//  هان برجع 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
- 
- 
- 

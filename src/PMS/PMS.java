@@ -35,6 +35,7 @@ public class PMS {
         System.out.println("2. Supply Medicine");
         System.out.println("3. Sale Medicine");
         System.out.println("4. Add User");
+        System.out.println("5. Check Expiry Date");
         System.out.print("Choose: ");
 
         int choice = input.nextInt();
@@ -44,7 +45,7 @@ public class PMS {
             switch (choice) {
 
                 case 1: // Medicine
-             MedicineEntiyScreen  ms  =new  MedicineEntiyScreen    ();
+             MedicineEntiyScreen  ms  =new  MedicineEntiyScreen();
                     Medicine m = ms.getMedicine();
                     facade.addMedicine(m);
                     System.out.println("Medicine saved");
@@ -57,31 +58,31 @@ public class PMS {
                     System.out.println("Supply saved");
                     break;
 
-                case 3: 
-                    
-    SaleScreen salesScreen = new SaleScreen();
-    Sale sale = salesScreen.getSale();
-    facade.addSale(sale);
-    System.out.println("Sale saved");
-    break;     
+                case 3://   sale                 
+              SaleScreen salesScreen = new SaleScreen();// هان شاشاة تعت salescreen   
+              Sale sale = salesScreen.getSale();// بناخد المعلومات كلها عنgetsell 
+              facade.addSale(sale); //   بنحزنهاكل معلومات    facade  هان
+              System.out.println("Sale saved");
+                 break;     
 
                 case 4:  
-                    LoginScreen us = new LoginScreen();
-                    User u = us.login();
-                    facade.addUser(u);
+                    LoginScreen us = new LoginScreen();  //  هان للعرض 
+                    User u = us.login(); //              هان بناخد المعلومات تعت user
+                    facade.addUser(u);  //  بنخزنها   قي facade  
                     System.out.println("User saved ✔");
                     break;
-
+                   
                 default:
                     System.out.println("Wrong choice!");
             }
+           
 
-        } catch (Exception e) {
-            System.out.println("Error occurred!");
-        }
+        }  catch (Exception e) {
+    e.printStackTrace();   
+
     }
-}
-
+ 
+    }}
     
     
  

@@ -25,10 +25,10 @@ public class MedicineEntiyScreen {
  
  
 
-    public Medicine getMedicine() {
+    public Medicine getMedicine() { //   بترحع كل المعلومات عن   hالدواء     
 
         Scanner input = new Scanner(System.in);
-
+//  خدول عبارة عن setm,geter 
         System.out.print("Enter medicine name: ");
         String name = input.nextLine();
 
@@ -37,11 +37,12 @@ public class MedicineEntiyScreen {
 
         System.out.print("Enter quantity: ");
         int quantity = input.nextInt();
-
         Medicine m = new Medicine();
         m.setName(name);
         m.setPrice(price);
         m.setQuantity(quantity);
+        
+        
 
         return m;
     }

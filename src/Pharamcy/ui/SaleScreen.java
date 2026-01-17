@@ -16,7 +16,7 @@ public class SaleScreen {
    
  
  
-    public Sale getSale() {
+    public Sale getSale() { //   
 
         Scanner input = new Scanner(System.in);
 

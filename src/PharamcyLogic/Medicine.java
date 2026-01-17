@@ -13,10 +13,12 @@ public class Medicine {
  
 
  
-    private String name;
-    private int quantity;
-    private double price;
-
+    private String name;  //  الاسم 
+    private int quantity;  //   الكمية  
+    private double price;//  السعر 
+  //     هدول setوget  
+ //   set بتاخد بيانات 
+  // get  بتعرض البياتات  
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
@@ -25,5 +27,6 @@ public class Medicine {
 
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
+  
 }
    

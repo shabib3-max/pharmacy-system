@@ -11,11 +11,11 @@ package PharamcyLogic;
  */
 public class Supply {
  
-
     private String medicineName;
     private int quantity;
     private String supplierName;
 
+    // Getter & Setter لاسم الدواء
     public String getMedicineName() {
         return medicineName;
     }
@@ -24,6 +24,7 @@ public class Supply {
         this.medicineName = medicineName;
     }
 
+    // Getter & Setter للكمية
     public int getQuantity() {
         return quantity;
     }
@@ -32,6 +33,7 @@ public class Supply {
         this.quantity = quantity;
     }
 
+    // Getter & Setter لاسم المورد
     public String getSupplierName() {
         return supplierName;
     }
@@ -40,6 +42,8 @@ public class Supply {
         this.supplierName = supplierName;
     }
 }
+
+ 
 
     
  
